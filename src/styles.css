@@ -1,0 +1,16 @@
+/* Minimal global styles (no Tailwind at-rules here).
+   Tailwind utilities are provided by the prebuilt `/tailwind.css` linked in index.html. */
+
+html, body, #app {
+	height: 100%;
+	margin: 0;
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f8fafc; /* slate-50 */
+}

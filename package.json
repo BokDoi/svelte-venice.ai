@@ -1,0 +1,31 @@
+{
+  "name": "svelte-venice.ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --no-deprecation node_modules/vite/bin/vite.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:tailwind": "npx tailwindcss -i ./src/tailwind.input.css -o ./tailwind.css --config ./tailwind.config.cjs --minify",
+    "tailwind:watch": "npx tailwindcss -i ./src/tailwind.input.css -o ./tailwind.css --config ./tailwind.config.cjs --watch",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .svelte,.ts,.js"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.5.3",
+    "@typescript-eslint/parser": "^6.21.0",
+    "autoprefixer": "^10.4.22",
+    "eslint": "^8.0.0",
+    "eslint-plugin-svelte": "^2.36.0",
+    "postcss": "^8.5.6",
+    "prettier": "^2.0.0",
+    "svelte": "^4.2.20",
+    "svelte-check": "^4.3.4",
+    "svelte-eslint-parser": "^0.41.0",
+    "svelte-preprocess": "^5.0.2",
+    "tailwindcss": "^3.4.18",
+    "typescript": "~5.3.3",
+    "vite": "^4.4.9"
+  }
+}
