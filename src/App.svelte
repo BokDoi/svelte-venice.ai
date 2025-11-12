@@ -24,7 +24,7 @@
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer 6wXFb8y0p0laBfW5CZnzhzfkazKT8znDR4K_a1qwnT`  // Replace with your actual API key
+          'Authorization': `Bearer YOUR_API_KEY`  // Replace with your actual API key
         },
         body: JSON.stringify({ model: "venice-uncensored", messages: [{ role: 'user', content: userInput }] })
       });
